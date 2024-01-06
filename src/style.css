@@ -24,22 +24,6 @@
     */
     position: absolute;
   }
-
-  .content {
-    position: absolute;
-    width: 100vw;
-    bottom: 5vh;
-    height:90vh;
-    padding: 0 12vw;
-    overflow: scroll;
-    mask-image: linear-gradient(
-      to bottom,
-      transparent,
-      black 5%,
-      black 95%,
-      transparent 100%
-    );
-  }
 }
 
 /*
