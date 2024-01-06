@@ -1,0 +1,40 @@
+[
+  {
+    "code": "",
+    "speakers": [
+      {
+        "code": "",
+        "name": "",
+        "biography": "",
+        "avatar": ""
+      }
+    ],
+    "title": "",
+    "submission_type": {
+      "en": ""
+    },
+    "submission_type_id": 3115,
+    "track": {
+      "en": "Workshop"
+    },
+    "track_id": 4031,
+    "state": "confirmed",
+    "abstract": "",
+    "description": "",
+    "duration": 120,
+    "slot_count": 1,
+    "do_not_record": false,
+    "is_featured": false,
+    "content_locale": "en",
+    "slot": {
+      "room_id": 2421,
+      "room": {
+        "en": ""
+      },
+      "start": "",
+      "end": ""
+    },
+    "image": "",
+    "resources": []
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "code": "",
+    "speakers": [],
+    "title": "",
+    "submission_type": {
+      "en": ""
+    },
+    "submission_type_id": 3115,
+    "track": null,
+    "track_id": null,
+    "state": "confirmed",
+    "abstract": "",
+    "description": "",
+    "duration": 25,
+    "slot_count": 1,
+    "do_not_record": false,
+    "is_featured": false,
+    "content_locale": "en",
+    "slot": {
+      "room_id": 2421,
+      "room": {
+        "en": ""
+      },
+      "start": "",
+      "end": ""
+    },
+    "image": null,
+    "resources": []
+  }
+]

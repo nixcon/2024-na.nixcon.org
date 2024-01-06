@@ -1,0 +1,8 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+const { extraClasses, id } = Astro.props;
+---
+<SectionHeading {id} {extraClasses} isEmbedded>
+  <slot />
+</SectionHeading>

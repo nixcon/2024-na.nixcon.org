@@ -1,6 +1,6 @@
 # NixCon NA 2024 Website
 
-This repository contains the website for NixCon NA 2024 in Pasedena, CA, USA.
+This repository contains the website for NixCon NA 2024 in Pasadena, CA, USA.
 
 ## Build
 

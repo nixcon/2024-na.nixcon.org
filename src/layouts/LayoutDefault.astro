@@ -1,0 +1,43 @@
+---
+import "@fontsource/roboto";
+import Footer from "../components/Layout/Footer.astro";
+import "./../style.css";
+import MenuBar from "../components/Layout/MenuBar.astro";
+---
+
+<html lang="en" class="frame">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>NixCon 2023</title>
+    <style>
+      @font-face {
+        font-family: "Behrensschrift";
+        src: url("/fonts/Behrensschrift-SH.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-nixblue-800 dark:bg-gray-900 dark:text-nixblue-100">
+    <div class="content md:px-[10vw] lg:px-[22vw] md:h-[83vh] lg:h-[85vh]">
+      <div
+        class="flex flex-col items-center justify-center text-center mt-10 pb-8"
+      >
+        <!--
+        <a href="/">
+	    <img src="/logo.svg" alt="NixCon 2023 Darmstadt" class="w-56 md:w-72" />
+	</a>
+        -->
+        <p class="text-2xl font-behrensschrift text-transparent bg-clip-text nixcon-gradient mt-2">
+          September 08 – 10
+        </p>
+      </div>
+      <MenuBar />
+      <slot />
+      <Footer />
+    </div>
+  </body>
+</html>

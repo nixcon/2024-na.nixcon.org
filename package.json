@@ -1,0 +1,29 @@
+{
+  "name": "nixcon-na-2024",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "fetch-data": "node ./fetch.mjs"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.19.4",
+    "@astrojs/svelte": "^4.0.1",
+    "@astrojs/tailwind": "^5.0.0",
+    "@fontsource/roboto": "^5.0.0",
+    "@vime/core": "^5.4.1",
+    "@vime/svelte": "^5.4.1",
+    "astro": "^3.0.10",
+    "marked": "^7.0.5",
+    "node-fetch": "^3.3.2",
+    "svelte": "^4.2.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}
