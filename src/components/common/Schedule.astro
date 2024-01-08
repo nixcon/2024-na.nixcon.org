@@ -6,6 +6,14 @@ let sorted = [];
 let daycount = 1;
 let data = [];
 let startDay = new Date("2024-03-14T00:00:00.000Z");
+
+// Change timezone for future events
+let timeOptions = {
+    hour: '2-digit',
+    minute: '2-digit',
+    timezone: 'America/Los_Angeles'
+};
+
 const {data: workshops} = await getEntry('schedule', 'workshops');
 const {data: talks} = await getEntry('schedule', 'talks');
 
@@ -47,12 +55,9 @@ data.sort((a, b) => {
                         <h2 class="border font-black text-lg bg-nixblue-800 rounded-lg text-white text-center p-2 flex flex-col">
                             {item.title}
                             <small>
-                                {(new Date(item.slot.start)).toLocaleTimeString([], {
-                                    hour: '2-digit',
-                                    minute: '2-digit'
-                                })}
+                                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
                                 -
-                                {(new Date(item.slot.end)).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}
+                                {(new Date(item.slot.end)).toLocaleTimeString([], timeOptions)}
                             </small>
                         </h2>
                 )
@@ -77,27 +82,27 @@ data.sort((a, b) => {
                         </div>
                         {item.submission_type.en === "Talk" ? (
                                 <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-blue-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}
+                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
             </span>
                         ) : null}
                         {item.submission_type.en === "Lightning talk" ? (
                                 <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-orange-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}
+                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
             </span>
                         ) : null}
                         {item.submission_type.en === "Product Talk" ? (
                                 <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-green-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}
+                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
             </span>
                         ) : null}
                         {item.submission_type.en === "Happy Hour" ? (
                                 <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-purple-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}
+                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
             </span>
                         ) : null}
                         {item.submission_type.en === "Workshop/Training - Select this if you are planning on running a training for attendees" ? (
                                 <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-red-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}
+                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
             </span>
                         ) : null}
 
