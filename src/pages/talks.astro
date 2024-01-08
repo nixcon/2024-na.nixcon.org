@@ -1,0 +1,26 @@
+---
+import Section from "../components/common/Section/Section.astro";
+import Schedule from "../components/common/Schedule.astro";
+import LayoutDefault from "../layouts/LayoutDefault.astro";
+import SectionHeading from "../components/common/Section/SectionHeading.astro";
+
+---
+
+<LayoutDefault>
+    <Section>
+      <SectionHeading>
+        Workshops (Room TBD)
+      </SectionHeading>
+      <!--
+      <Schedule type="workshops" />
+      -->
+    </Section>
+    <Section>
+      <SectionHeading>
+        Talks (Room TBD)
+      <!--
+      </SectionHeading>
+      -->
+      <Schedule />
+    </Section>
+</LayoutDefault>

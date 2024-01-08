@@ -1,0 +1,17 @@
+[
+  {
+    "link": "https://www.openstreetmap.org/way/209720649#map=19/34.14378/-118.14526&layers=N",
+    "name": "OpenStreetMap",
+    "icon": "map"
+  },
+  {
+    "link": "https://maps.app.goo.gl/YVa7LnuH4PH42GADA",
+    "name": "Google Maps",
+    "icon": "google"
+  },
+  {
+    "link": "need-an-iphone",
+    "name": "Apple Maps",
+    "icon": "apple"
+  }
+]

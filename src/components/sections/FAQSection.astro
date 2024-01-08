@@ -1,0 +1,70 @@
+---
+
+import Icon from "../common/Icon.astro";
+import List from "../common/List.astro";
+import BlockList from "../common/BlockList/BlockList.astro";
+import SubSectionHeading from "../common/Section/SubSectionHeading.astro";
+import SectionParagraph from "../common/Section/SectionParagraph.astro";
+import SectionHeading from "../common/Section/SectionHeading.astro";
+import BlockListHeader from "../common/BlockList/BlockListHeader.astro";
+import Section from "../common/Section/Section.astro";
+import BlockListBody from "../common/BlockList/BlockListBody.astro";
+import ListItem from "../common/ListItem.astro";
+---
+
+<Section extraClasses="pb-4">
+    <SectionHeading id="faq">FAQ</SectionHeading>
+    <SubSectionHeading id="volunteer">I am interested in helping? What can I do?</SubSectionHeading>
+    <SectionParagraph>
+        We are actively looking for volunteers for before, during and after the event.
+        If you are interested please, ...
+    </SectionParagraph>
+
+    <SectionParagraph>
+        There is also a Matrix room for <a href="https://matrix.to/#/#nixcon-na:nixos.org">#nixcon-na:nixos.org</a>.
+    </SectionParagraph>
+
+    <SubSectionHeading id="video">Will there be video recording?</SubSectionHeading>
+    <SectionParagraph>
+        Yes! TBD
+    </SectionParagraph>
+
+    <SubSectionHeading id="edit">This website is broken! Can I fix it?</SubSectionHeading>
+    <SectionParagraph>
+        Yes! The website source is at: <a href="https://github.com/nixcon/2024-na.nixcon.org">https://github.com/nixcon/2024-na.nixcon.org</a>.
+    </SectionParagraph>
+
+    <SubSectionHeading id="hackday">What is a Unconf?</SubSectionHeading>
+    <SectionParagraph>
+        TBD
+    </SectionParagraph>
+
+    <SubSectionHeading id="arrival">How do I get to NixCon NA 2024?</SubSectionHeading>
+
+    <BlockList>
+        <li>
+            <BlockListHeader>
+                <Icon name="plane" />
+                By plane
+            </BlockListHeader>
+            <BlockListBody>
+                <List>
+                    <ListItem>
+                    </ListItem>
+                </List>
+            </BlockListBody>
+        </li>
+        <li>
+            <BlockListHeader>
+                <Icon name="car" />
+                By car
+            </BlockListHeader>
+            <BlockListBody>
+                <List>
+                    <ListItem>
+                    </ListItem>
+                </List>
+            </BlockListBody>
+        </li>
+    </BlockList>
+</Section>
