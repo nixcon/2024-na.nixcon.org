@@ -1,29 +1,112 @@
 [
   {
-    "code": "",
-    "speakers": [],
-    "title": "",
+    "speakers": [
+        {
+            "name": "TBA"
+        }
+    ],
+    "title": "NixCon NA 2024 Opening Keynote",
     "submission_type": {
-      "en": ""
+      "en": "Talk"
     },
-    "submission_type_id": 3115,
-    "track": null,
-    "track_id": null,
     "state": "confirmed",
-    "abstract": "",
-    "description": "",
-    "duration": 25,
+    "abstract": "TBA",
+    "description": "TBA",
+    "duration": 30,
     "slot_count": 1,
     "do_not_record": false,
     "is_featured": false,
     "content_locale": "en",
     "slot": {
-      "room_id": 2421,
       "room": {
-        "en": ""
+        "en": "TBA"
       },
-      "start": "",
-      "end": ""
+      "start": "2024-03-15T09:00:00-07:00",
+      "end": "2024-03-15T09:30:00-07:00"
+    },
+    "image": null,
+    "resources": []
+  },
+  {
+    "speakers": [
+        {
+            "name": "TBA"
+        }
+    ],
+    "title": "Break",
+    "submission_type": {
+      "en": "Break"
+    },
+    "state": "confirmed",
+    "abstract": "TBA",
+    "description": "TBA",
+    "duration": 30,
+    "slot_count": 1,
+    "do_not_record": false,
+    "is_featured": false,
+    "content_locale": "en",
+    "slot": {
+      "room": {
+        "en": "TBA"
+      },
+      "start": "2024-03-15T11:00:00-07:00",
+      "end": "2024-03-15T11:30:00-07:00"
+    },
+    "image": null,
+    "resources": []
+  },
+  {
+    "speakers": [
+        {
+            "name": "TBA"
+        }
+    ],
+    "title": "Lunch Break",
+    "submission_type": {
+      "en": "Break"
+    },
+    "state": "confirmed",
+    "abstract": "TBA",
+    "description": "TBA",
+    "duration": 60,
+    "slot_count": 1,
+    "do_not_record": false,
+    "is_featured": false,
+    "content_locale": "en",
+    "slot": {
+      "room": {
+        "en": "TBA"
+      },
+      "start": "2024-03-15T12:30:00-07:00",
+      "end": "2024-03-15T13:30:00-07:00"
+    },
+    "image": null,
+    "resources": []
+  },
+  {
+    "speakers": [
+        {
+            "name": "TBA"
+        }
+    ],
+    "title": "NixCon NA 2024 Closing Keynote",
+    "submission_type": {
+      "en": "Talk"
+    },
+    "state": "confirmed",
+    "abstract": "TBA",
+    "description": "TBA",
+    "duration": 30,
+    "slot_count": 1,
+    "do_not_record": false,
+    "is_featured": false,
+    "content_locale": "en",
+    "slot": {
+      "room": {
+        "en": "TBA"
+      },
+      "start": "2024-03-15T17:00:00-07:00",
+      "end": "2024-03-15T17:30:00-07:00"
     },
     "image": null,
     "resources": []
