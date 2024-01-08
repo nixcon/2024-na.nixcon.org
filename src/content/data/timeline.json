@@ -2,13 +2,13 @@
   {
     "day": "Thursday",
     "date": "2024-03-14",
-    "name": "Workshops",
+    "name": "Workshops & Lightning Talks",
     "link": "/talks#day-1"
   },
   {
     "day": "Friday",
     "date": "2024-03-15",
-    "name": "Talks",
+    "name": "Talks & Unconf",
     "link": "/talks#day-2"
   }
 ]
