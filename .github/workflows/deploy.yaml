@@ -1,0 +1,45 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # rebuild website once an hour
+    - cron:  '23 * * * *'
+
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Timezone
+        uses: szenius/set-timezone@v1.2
+        with:
+          timezoneLinux: "America/Los_Angeles"
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - uses: cachix/install-nix-action@v18
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: Make the build unique
+        run: echo "<!-- $(date +%s) -->" >> src/pages/index.astro
+
+      - uses: workflow/nix-shell-action@v3
+        with:
+          packages: bun
+          script: |
+            bun install
+            bun run fetch-data
+            bun run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
