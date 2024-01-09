@@ -7,6 +7,7 @@ on:
   schedule:
     # rebuild website once an hour
     - cron:  '23 * * * *'
+  workflow_dispatch: # allows manual triggering
 
 
 permissions:
