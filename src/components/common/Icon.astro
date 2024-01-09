@@ -1,6 +1,6 @@
 ---
 const {name, extraClasses} = Astro.props;
-const clases = `mr-1 h-6 w-6 inline-block fill-current ${extraClasses}`;
+const clases = `mr-1 h-6 w-6 inline-block fill-current ${extraClasses || ''}`;
 ---
 
 <svg xmlns="http://www.w3.org/2000/svg" class={clases} viewBox="0 0 24 24">
