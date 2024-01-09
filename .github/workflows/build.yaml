@@ -1,0 +1,36 @@
+name: Build
+
+on:
+  pull_request_target:
+    types: [edited, opened, synchronize, reopened]
+
+jobs:
+  build:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Timezone
+        uses: szenius/set-timezone@v1.2
+        with:
+          timezoneLinux: "America/Los_Angeles"
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - uses: DeterminateSystems/nix-installer-action@v4
+      - uses: DeterminateSystems/magic-nix-cache-action@v2
+
+      - run: npm i
+
+      - name: Build
+        run: |
+          nix build
+
+      - name: Copy build result
+        run: |
+          cp -rv $(readlink -f result) out
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: website
+          path: out/**
