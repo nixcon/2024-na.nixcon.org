@@ -1,26 +1,13 @@
 {
   "diamond": [
-    {
-      "image": "sponsor-logo",
-      "alt": "sponsor",
-      "url": "sponsor-site"
-    }
   ],
   "gold": [
-    {
-      "image": "sponsor-logo",
-      "alt": "sponsor",
-      "url": "sponsor-site"
-    }
   ],
   "silver": [
-    {
-      "image": "sponsor-logo",
-      "alt": "sponsor",
-      "url": "sponsor-site"
-    }
   ],
   "bronze": [
+  ],
+  "schema": [
     {
       "image": "sponsor-logo",
       "alt": "sponsor",
