@@ -33,7 +33,7 @@
 
         preBuild = ''
           export HOME=$(pwd)
-          export TZ=Europe/Berlin
+          export TZ=America/Los_Angeles
         '';
         installPhase = ''
           cp -rv dist $out
