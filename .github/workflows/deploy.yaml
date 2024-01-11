@@ -37,7 +37,6 @@ jobs:
           packages: bun
           script: |
             bun install
-            bun run fetch-data
             bun run build
 
       - name: Deploy 🚀
