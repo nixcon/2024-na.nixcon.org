@@ -1,8 +1,13 @@
-name: Build
+name: Build and Preview
 
 on:
   pull_request_target:
-    types: [edited, opened, synchronize, reopened]
+    types:
+      - edited
+      - opened
+      - synchronize
+      - reopened
+      - closed
 
 jobs:
   build:
@@ -22,12 +27,18 @@ jobs:
       - run: npm i
 
       - name: Build
+        if: github.event.action != 'closed'
         run: |
           nix build
 
       - name: Copy build result
         run: |
           cp -rv $(readlink -f result) out
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./out/
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
