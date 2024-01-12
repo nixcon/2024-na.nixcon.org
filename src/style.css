@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  a {
-    @apply text-nixblue-800 dark:text-nixblue-200 font-bold;
+  a:not(.no-underline) {
+    text-decoration: underline solid 2px !important;
   }
 
   a:hover {
