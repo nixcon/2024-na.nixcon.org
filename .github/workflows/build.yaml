@@ -26,14 +26,14 @@ jobs:
 
       - run: npm i
 
+      - name: Change config for PR preview build
+        run: |
+          sed -i '11 i  "base": "/pr-preview/pr-${{ github.event.number }}",' astro.config.mjs
+
       - name: Build
         if: github.event.action != 'closed'
         run: |
-          sed -i '11 i  "base": "/pr-preview/pr-${{ github.event.number }}",' astro.config.mjs
           nix build
-          echo $PWD
-          ls *
-          cat astro.config.mjs
 
       - name: Copy build result
         run: |
