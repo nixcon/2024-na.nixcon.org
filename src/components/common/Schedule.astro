@@ -73,7 +73,6 @@ function addStartOfDayEntry(daySchedule) {
       id: `day-${daycount}`,
       title: `Start of Day ${daycount}`,
       format: "day",
-      categories: [], // only needed for development because data persists
       startsAt: new Date(firstEntry.startsAt).setHours(0, 0, 0, 0),
       endsAt: new Date(firstEntry.startsAt).setHours(23, 59, 59, 999)
     },
