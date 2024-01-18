@@ -2,9 +2,6 @@
 let {type = "talks"} = Astro.props;
 import {getEntry} from "astro:content";
 import {marked} from 'marked';
-let daycount = 1;
-let data = [];
-let startDay = new Date("2024-03-14T00:00:00.000Z");
 
 // Change timezone for future events
 let timeOptions = {
@@ -15,67 +12,76 @@ let timeOptions = {
 
 const {data: schedule} = await getEntry('schedule', 'all');
 
-if (type == "workshops") {
-    data = schedule[0]['rooms'][0]['sessions'];
-} else {
-    data = schedule[1]['rooms'][0]['sessions'];
+function getDailyData(schedule) {
+  if (type == "workshops") {
+      return schedule[0]['rooms'][0]['sessions'];
+  } else {
+      return schedule[1]['rooms'][0]['sessions'];
+  }
 }
 
+function parseSchedule(data) {
+  // The json file from sessionize is annoyingly nested.
+  // Bringing certain fields to the top level of each entry so it's easier to work with.
+  data.forEach((elem, idx, arr) => {
+    // For talks and workshops that have categories
+    elem['categories'].map((category) => {
+      if (category['name'] === 'Session format') {
+        elem['format'] = category['categoryItems'][0]['name'].toLowerCase();
+      }
+      if (category['name'] === 'Level') {
+        elem['level'] = category['categoryItems'][0]['name'];
+      }
+      if (category['name'] === 'Tags') {
+        elem['tags'] = (
+          category['categoryItems']
+          .map((item) => item['name'])
+          .join(", ")
+        );
+      }
+    })
 
-// The json file from sessionize is annoyingly nested.
-// Bringing certain fields to the top level of each entry so it's easier to work with.
-data.forEach((elem, idx, arr) => {
-  // For talks and workshops that have categories
-  elem['categories'].map((category) => {
-    if (category['name'] === 'Session format') {
-      elem['format'] = category['categoryItems'][0]['name'].toLowerCase();
+    // For breaks, ceremonies, unconf, and karaoke
+    if (elem['title'].includes('Ceremony')) {
+      elem['format'] = 'ceremony';
     }
-    if (category['name'] === 'Level') {
-      elem['level'] = category['categoryItems'][0]['name'];
+    if (elem['title'].includes('Break')) {
+      elem['format'] = 'break';
     }
-    if (category['name'] === 'Tags') {
-      elem['tags'] = (
-        category['categoryItems']
-        .map((item) => item['name'])
-        .join(", ")
-      );
+    if (elem['title'].includes('Lightning Talks')) {
+      elem['format'] = 'lightning-talks';
     }
+    if (elem['title'].includes('Karaoke')) {
+      elem['format'] = 'karaoke';
+    }
+    if (elem['title'].includes('UnConference')) {
+      elem['format'] = 'unconference';
+    }
+
   })
 
-  // For breaks, ceremonies, unconf, and karaoke
-  if (elem['title'].includes('Ceremony')) {
-    elem['format'] = 'ceremony';
-  }
-  if (elem['title'].includes('Break')) {
-    elem['format'] = 'break';
-  }
-  if (elem['title'].includes('Lightning Talks')) {
-    elem['format'] = 'lightning-talks';
-  }
-  if (elem['title'].includes('Karaoke')) {
-    elem['format'] = 'karaoke';
-  }
-  if (elem['title'].includes('UnConference')) {
-    elem['format'] = 'unconference';
-  }
-
-})
+  return data;
+}
 
 function addStartOfDayEntry(daySchedule) {
   let firstEntry = daySchedule[0];
+  let startDay = new Date("2024-03-14T00:00:00.000Z");
   let diff = new Date(firstEntry.startsAt) - startDay;
-  daycount = Math.ceil(diff / (1000 * 60 * 60 * 24));
-  daySchedule.unshift({
-    id: `day-${daycount}`,
-    title: `Start of Day ${daycount}`,
-    format: "day",
-    categories: [], // only needed for development because data persists
-    startsAt: new Date(firstEntry.startsAt).setHours(0, 0, 0, 0),
-    endsAt: new Date(firstEntry.startsAt).setHours(23, 59, 59, 999)
-  });
+  let daycount = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  return [
+    {
+      id: `day-${daycount}`,
+      title: `Start of Day ${daycount}`,
+      format: "day",
+      categories: [], // only needed for development because data persists
+      startsAt: new Date(firstEntry.startsAt).setHours(0, 0, 0, 0),
+      endsAt: new Date(firstEntry.startsAt).setHours(23, 59, 59, 999)
+    },
+    ...daySchedule
+  ];
 }
 
-addStartOfDayEntry(data)
+let data = addStartOfDayEntry(parseSchedule(getDailyData(schedule)))
 
 ---
 
