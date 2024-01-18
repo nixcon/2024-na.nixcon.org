@@ -2,10 +2,6 @@
 let {type = "talks"} = Astro.props;
 import {getEntry} from "astro:content";
 import {marked} from 'marked';
-let sorted = [];
-let daycount = 1;
-let data = [];
-let startDay = new Date("2024-03-14T00:00:00.000Z");
 
 // Change timezone for future events
 let timeOptions = {
@@ -14,184 +10,237 @@ let timeOptions = {
     timezone: 'America/Los_Angeles'
 };
 
-const {data: workshops} = await getEntry('schedule', 'workshops');
-const {data: talks} = await getEntry('schedule', 'talks');
+const {data: schedule} = await getEntry('schedule', 'all');
 
-if (type == "workshops") {
-    data = workshops;
-} else {
-    data = talks;
+function getDailyData(schedule) {
+  if (type == "workshops") {
+      return schedule[0]['rooms'][0]['sessions'];
+  } else {
+      return schedule[1]['rooms'][0]['sessions'];
+  }
 }
 
-data.sort((a, b) => {
-    return a.slot.start.localeCompare(b.slot.start)
-}).forEach((el, idx, arr) => {
-    if (idx == 0 || new Date(arr[idx - 1].slot.start).getDate() != new Date(el.slot.start).getDate()) {
-        let diff = new Date(el.slot.start) - startDay;
-        daycount = Math.ceil(diff / (1000 * 60 * 60 * 24));
-        sorted.push({
-            code: `day-${daycount}`,
-            title: `Start of Day ${daycount}`,
-            submission_type: {
-                en: "Day"
-            },
-            slot: {
-                start: new Date(el.slot.start).setHours(0, 0, 0, 0),
-                end: new Date(el.slot.start).setHours(23, 59, 59, 999)
-            }
-        })
+function parseSchedule(data) {
+  // The json file from sessionize is annoyingly nested.
+  // Bringing certain fields to the top level of each entry so it's easier to work with.
+  data.forEach((elem, idx, arr) => {
+    // For talks and workshops that have categories
+    elem['categories'].map((category) => {
+      if (category['name'] === 'Session format') {
+        elem['format'] = category['categoryItems'][0]['name'].toLowerCase();
+      }
+      if (category['name'] === 'Level') {
+        elem['level'] = category['categoryItems'][0]['name'];
+      }
+      if (category['name'] === 'Tags') {
+        elem['tags'] = (
+          category['categoryItems']
+          .map((item) => item['name'])
+          .join(", ")
+        );
+      }
+    })
+
+    // For breaks, ceremonies, unconf, and karaoke
+    if (elem['title'].includes('Ceremony')) {
+      elem['format'] = 'ceremony';
     }
-    sorted.push(el);
-})
+    if (elem['title'].includes('Break')) {
+      elem['format'] = 'break';
+    }
+    if (elem['title'].includes('Lightning Talks')) {
+      elem['format'] = 'lightning-talks';
+    }
+    if (elem['title'].includes('Karaoke')) {
+      elem['format'] = 'karaoke';
+    }
+    if (elem['title'].includes('UnConference')) {
+      elem['format'] = 'unconference';
+    }
+
+  })
+
+  return data;
+}
+
+function addStartOfDayEntry(daySchedule) {
+  let firstEntry = daySchedule[0];
+  let startDay = new Date("2024-03-14T00:00:00.000Z");
+  let diff = new Date(firstEntry.startsAt) - startDay;
+  let daycount = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  return [
+    {
+      id: `day-${daycount}`,
+      title: `Start of Day ${daycount}`,
+      format: "day",
+      startsAt: new Date(firstEntry.startsAt).setHours(0, 0, 0, 0),
+      endsAt: new Date(firstEntry.startsAt).setHours(23, 59, 59, 999)
+    },
+    ...daySchedule
+  ];
+}
+
+let data = addStartOfDayEntry(parseSchedule(getDailyData(schedule)))
+
 ---
 
 <div class="flex flex-col">
     {
-        sorted.map((item, index) => {
-            if (item.submission_type.en == "Break"
-                || item.submission_type.en == "Break Long"
-            ) {
+        data.map((item, index) => {
+            if (item.format == "break") {
                 return (
-                        <h2 class="border font-black text-lg bg-nixblue-800 rounded-lg text-white text-center p-2 flex flex-col">
-                            {item.title}
-                            <small>
-                                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
-                                -
-                                {(new Date(item.slot.end)).toLocaleTimeString([], timeOptions)}
-                            </small>
-                        </h2>
+                    <h2 class="border font-black text-lg bg-nixblue-800 rounded-lg text-white text-center p-2 flex flex-col">
+                        {item.title}
+                        <small>
+                            {(new Date(item.startsAt)).toLocaleTimeString([], timeOptions)}
+                            -
+                            {(new Date(item.endsAt)).toLocaleTimeString([], timeOptions)}
+                        </small>
+                    </h2>
                 )
             }
 
-            if (item.submission_type.en == "Day") {
+            if (item.format == "day") {
                 return (
-                        <h2 id={item.code}
-                            class="border font-black text-lg bg-nixblue-800 rounded-lg text-white text-center p-2 flex flex-col">
-                            {item.title}
-                        </h2>
+                    <h2 id={item.id}
+                        class="border font-black text-lg bg-nixblue-800 rounded-lg text-white text-center p-2 flex flex-col">
+                        {item.title}
+                    </h2>
                 )
             }
 
             return (
-                    <div key={index}
-                         id={item.code}
-                         class="slot"
-                    >
-                        <div class="slot-line-top">
-                            <div class="slot-line-graphic"></div>
-                        </div>
-                        {item.submission_type.en === "Talk" ? (
-                                <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-blue-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
-            </span>
-                        ) : null}
-                        {item.submission_type.en === "Lightning talk" ? (
-                                <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-orange-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
-            </span>
-                        ) : null}
-                        {item.submission_type.en === "Product Talk" ? (
-                                <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-green-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
-            </span>
-                        ) : null}
-                        {item.submission_type.en === "Happy Hour" ? (
-                                <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-purple-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
-            </span>
-                        ) : null}
-                        {item.submission_type.en === "Workshop/Training - Select this if you are planning on running a training for attendees" ? (
-                                <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-red-500">
-                {(new Date(item.slot.start)).toLocaleTimeString([], timeOptions)}
-            </span>
-                        ) : null}
+                <div key={index}
+                     id={item.id}
+                     class="slot"
+                >
 
-                        <div class="slot-line-bottom">
-                            <div class="slot-line-graphic"></div>
-                        </div>
-                        <div class="slot-info border border-black rounded-lg md:my-2 rounded-tl-none">
-                            <h2
-                                    class="text-md font-bold p-2 bg-black text-gray-50"
-                            >{item.title}</h2>
-                            <p class="block bg-gray-800 text-white text-bold px-2 py-1">
-                                {
-                                    item.speakers.map((speaker, index) => {
-                                        return (
-                                                <span key={index}>
-                    {speaker.name}
-                                                    {index < item.speakers.length - 1 ? ", " : " - "}
-                  </span>
-                                        )
-                                    })
-                                }
-                                {item.submission_type.en}
-                            </p>
-                            <div class="p-2 talk-abstract" set:html={marked.parse(item.abstract)}/>
-                        </div>
+                    <div class="slot-line-top">
+                        <div class="slot-line-graphic"></div>
                     </div>
-                )
-                })
-                }
+
+                    {item.format === "talk" ? (
+                        <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-blue-500">
+                            {(new Date(item.startsAt)).toLocaleTimeString([], timeOptions)}
+                        </span>
+                    ) : null}
+
+                    {item.format === "lightning-talks" ? (
+                        <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-orange-500">
+                            {(new Date(item.startsAt)).toLocaleTimeString([], timeOptions)}
+                        </span>
+                    ) : null}
+
+                    {item.format === "unconference" ? (
+                        <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-orange-500">
+                            {(new Date(item.startsAt)).toLocaleTimeString([], timeOptions)}
+                        </span>
+                    ) : null}
+
+                    {item.format === "ceremony" ? (
+                        <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-green-500">
+                            {(new Date(item.startsAt)).toLocaleTimeString([], timeOptions)}
+                        </span>
+                    ) : null}
+                    {item.format === "karaoke" ? (
+                        <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-purple-500">
+                            {(new Date(item.startsAt)).toLocaleTimeString([], timeOptions)}
+                        </span>
+                    ) : null}
+                    {item.format === "workshop" ? (
+                        <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-red-500">
+                            {(new Date(item.startsAt)).toLocaleTimeString([], timeOptions)}
+                        </span>
+                    ) : null}
+
+                    <div class="slot-line-bottom">
+                        <div class="slot-line-graphic"></div>
+                    </div>
+
+                    <div class="slot-info border border-black rounded-lg md:my-2 rounded-tl-none">
+
+                        <h2 class="text-md font-bold p-2 bg-black text-gray-50" >{item.title}</h2>
+
+                        <p class="block bg-gray-800 text-white text-bold px-2 py-1">
+                            { item.speakers.map((speaker, index) => {
+                                return (
+                                    <span key={index}>
+                                        {speaker.name}
+                                        {index < item.speakers.length - 1 ? ", " : " - "}
+                                    </span>
+                                )
+                            })}
+                            {item.title}
+                        </p>
+
+                        {item.description !== null ? (
+                            <div class="p-2 talk-abstract" set:html={marked.parse(item.description)}/>
+                        ) : null }
+                    </div>
                 </div>
+                )
+        })
+    }
+</div>
 
-                    <style>
+<style>
 
-                        .slot {
-                            display: grid;
-                            grid-template-columns: 6rem 1fr;
-                            grid-template-rows: 0.5rem auto 1fr;
-                            grid-column-gap: 0px;
-                            grid-row-gap: 0px;
-                        }
+    .slot {
+        display: grid;
+        grid-template-columns: 6rem 1fr;
+        grid-template-rows: 0.5rem auto 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
 
-                        .slot-line-top {
-                            grid-area: 1 / 1 / 2 / 2;
-                        }
+    .slot-line-top {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 
-                        .slot-time {
-                            grid-area: 2 / 1 / 3 / 2;
-                        }
+    .slot-time {
+        grid-area: 2 / 1 / 3 / 2;
+    }
 
-                        .slot-line-bottom {
-                            grid-area: 3 / 1 / 4 / 2;
-                        }
+    .slot-line-bottom {
+        grid-area: 3 / 1 / 4 / 2;
+    }
 
-                        .slot-info {
-                            grid-area: 1 / 2 / 4 / 3;
-                        }
+    .slot-info {
+        grid-area: 1 / 2 / 4 / 3;
+    }
 
-                        .slot-line-graphic {
-                            background-color: black;
-                            display: block;
-                            width: 0.125rem;
-                            height: 100%;
-                            margin: 0 auto;
-                            min-height: 100%;
-                        }
+    .slot-line-graphic {
+        background-color: black;
+        display: block;
+        width: 0.125rem;
+        height: 100%;
+        margin: 0 auto;
+        min-height: 100%;
+    }
 
-                        @media (max-width: 768px) {
-                            .slot {
-                                display: grid;
-                                grid-template-columns: 1fr;
-                                grid-template-rows: 2rem auto 1rem auto;
-                                grid-column-gap: 0px;
-                                grid-row-gap: 0px;
-                            }
+    @media (max-width: 768px) {
+        .slot {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2rem auto 1rem auto;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
 
-                            .slot-line-top {
-                                grid-area: 1 / 1 / 2 / 2;
-                            }
+        .slot-line-top {
+            grid-area: 1 / 1 / 2 / 2;
+        }
 
-                            .slot-time {
-                                grid-area: 2 / 1 / 3 / 2;
-                            }
+        .slot-time {
+            grid-area: 2 / 1 / 3 / 2;
+        }
 
-                            .slot-line-bottom {
-                                grid-area: 3 / 1 / 4 / 2;
-                            }
+        .slot-line-bottom {
+            grid-area: 3 / 1 / 4 / 2;
+        }
 
-                            .slot-info {
-                                grid-area: 4 / 1 / 5 / 2;
-                            }
-                        }
-                    </style>
+        .slot-info {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+    }
+</style>

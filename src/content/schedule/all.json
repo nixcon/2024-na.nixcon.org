@@ -1,0 +1,2020 @@
+[
+  {
+    "date": "2024-03-14T00:00:00",
+    "isDefault": true,
+    "rooms": [
+      {
+        "id": 42474,
+        "name": "Room 1",
+        "sessions": [
+          {
+            "id": "48367c22-7b6c-4db3-86a1-ec565ab02077",
+            "title": "Opening Ceremony",
+            "description": null,
+            "startsAt": "2024-03-14T09:15:00",
+            "endsAt": "2024-03-14T09:30:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          },
+          {
+            "id": "588736",
+            "title": "A Quick Introduction to Nix",
+            "description": "This session will contain an introduction to Nix for the uninitiated. You will leave with an understanding of the basics and, perhaps, the beginning of a lifetime of love for Nix. We will cover installation, use of the CLI, and the basics of the Nix language.",
+            "startsAt": "2024-03-14T09:30:00",
+            "endsAt": "2024-03-14T10:50:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "4145bd2c-e806-42e4-90c1-cdf9ac53ab72",
+                "name": "Tom Bereknyei"
+              },
+              {
+                "id": "78682e53-faca-4ac7-9492-6495ac6c5be9",
+                "name": "Rok Garbas"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226413,
+                    "name": "Workshop"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226417,
+                    "name": "Introductory and overview"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "596570",
+            "title": "Managing your Userland with Home-Manager",
+            "description": "Unleash the full potential of your user environment with the \"Portable Userlands with Home-Manager\" workshop. Discover how to use Home-Manager to create reproducible, portable configurations for your applications and tools. Ideal for Nix users who want to personalize and efficiently manage their desktop across multiple systems.\r\n\r\nFor all Nix(OS) users who are not afraid of writing configuration files in Nix language.",
+            "startsAt": "2024-03-14T11:00:00",
+            "endsAt": "2024-03-14T12:20:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "2c38eaac-07ea-4b63-9886-7c143aa42b61",
+                "name": "Jacek Galowicz"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226413,
+                    "name": "Workshop"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226418,
+                    "name": "Intermediate"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 226437,
+                    "name": "Development environments"
+                  },
+                  {
+                    "id": 226438,
+                    "name": "Reproducible builds"
+                  },
+                  {
+                    "id": 226441,
+                    "name": "Deployment"
+                  },
+                  {
+                    "id": 227182,
+                    "name": "Nix at Work"
+                  }
+                ],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "dd502509-1bc3-411d-9d64-a43074ccd498",
+            "title": "Lunch Break",
+            "description": null,
+            "startsAt": "2024-03-14T12:30:00",
+            "endsAt": "2024-03-14T13:30:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          },
+          {
+            "id": "597288",
+            "title": "Basic NixOS Modules",
+            "description": "We've all been there. We start playing with our NixOS config and see a cool blog post about modularizing your config. That would be so cool! ... wait how do modules work? The documentation is pretty sparse. And those \"beginner\" blog posts about modules are so beginner friendly.\r\n\r\nSo we are going to play with and build our own modules. But we aren't going to build packages; our output is going to be plaintext. We are going to see and feel how each of our options influences the output.",
+            "startsAt": "2024-03-14T13:30:00",
+            "endsAt": "2024-03-14T14:50:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "d6375f1c-755a-417c-ae76-a8ae9c4ad260",
+                "name": "Daniel Baker"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226413,
+                    "name": "Workshop"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226417,
+                    "name": "Introductory and overview"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 227181,
+                    "name": "Teaching Nix"
+                  }
+                ],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "601376",
+            "title": "Continuous Integration Hands-On",
+            "description": "Add state of the art continuous integration (CI) to your project.  With Nix, CI not only enhances code quality, it also provides automatic binary caching, speeding up development and deployment.  We'll cover the basics, gotchas, and tips and tricks for CI in Nix-based projects, and then help you apply them to your own project.  Mentors will be available to help work through any issues you encounter.  Our goal is for everyone to leave the workshop with a fully set up CI process in production.",
+            "startsAt": "2024-03-14T15:00:00",
+            "endsAt": "2024-03-14T16:20:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "5918750a-480b-4404-a9dd-6004c207409e",
+                "name": "Ryan Trinkle"
+              },
+              {
+                "id": "94185615-04d6-465d-a12f-020e0536147e",
+                "name": "John Ericson"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226413,
+                    "name": "Workshop"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226417,
+                    "name": "Introductory and overview"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 226437,
+                    "name": "Development environments"
+                  },
+                  {
+                    "id": 226438,
+                    "name": "Reproducible builds"
+                  },
+                  {
+                    "id": 226441,
+                    "name": "Deployment"
+                  },
+                  {
+                    "id": 227182,
+                    "name": "Nix at Work"
+                  }
+                ],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "841d48e7-1b7a-4679-931d-6efec9294188",
+            "title": "Lightning Talks",
+            "description": "Talks will be strictly limited to 5 minutes.",
+            "startsAt": "2024-03-14T16:30:00",
+            "endsAt": "2024-03-14T17:30:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          },
+          {
+            "id": "8997e16f-5ab8-4d7a-87ae-37e314da8324",
+            "title": "Karaoke",
+            "description": "This is not actually at the conference, but we're going out and we're going to tear up a karaoke stage.",
+            "startsAt": "2024-03-14T21:00:00",
+            "endsAt": "2024-03-14T23:00:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      },
+      {
+        "id": 42475,
+        "name": "Room 2",
+        "sessions": [
+          {
+            "id": "5bc9055b-7dda-481a-b60d-7a8af0e575ec",
+            "title": "NixOS Install-fest / Nix Packaging",
+            "description": "Throughout the day you can congregate in this room to try installing NixOS in a VM so you can get a feel for it. We'll also have people in this area helping out with packaging software with Nix.",
+            "startsAt": "2024-03-14T09:30:00",
+            "endsAt": "2024-03-14T16:30:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42475,
+            "room": "Room 2",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      }
+    ],
+    "timeSlots": [
+      {
+        "slotStart": "09:15:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "48367c22-7b6c-4db3-86a1-ec565ab02077",
+              "title": "Opening Ceremony",
+              "description": null,
+              "startsAt": "2024-03-14T09:15:00",
+              "endsAt": "2024-03-14T09:30:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "09:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "588736",
+              "title": "A Quick Introduction to Nix",
+              "description": "This session will contain an introduction to Nix for the uninitiated. You will leave with an understanding of the basics and, perhaps, the beginning of a lifetime of love for Nix. We will cover installation, use of the CLI, and the basics of the Nix language.",
+              "startsAt": "2024-03-14T09:30:00",
+              "endsAt": "2024-03-14T10:50:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "4145bd2c-e806-42e4-90c1-cdf9ac53ab72",
+                  "name": "Tom Bereknyei"
+                },
+                {
+                  "id": "78682e53-faca-4ac7-9492-6495ac6c5be9",
+                  "name": "Rok Garbas"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226413,
+                      "name": "Workshop"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226417,
+                      "name": "Introductory and overview"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          },
+          {
+            "id": 42475,
+            "name": "Room 2",
+            "session": {
+              "id": "5bc9055b-7dda-481a-b60d-7a8af0e575ec",
+              "title": "NixOS Install-fest / Nix Packaging",
+              "description": "Throughout the day you can congregate in this room to try installing NixOS in a VM so you can get a feel for it. We'll also have people in this area helping out with packaging software with Nix.",
+              "startsAt": "2024-03-14T09:30:00",
+              "endsAt": "2024-03-14T16:30:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42475,
+              "room": "Room 2",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "11:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "596570",
+              "title": "Managing your Userland with Home-Manager",
+              "description": "Unleash the full potential of your user environment with the \"Portable Userlands with Home-Manager\" workshop. Discover how to use Home-Manager to create reproducible, portable configurations for your applications and tools. Ideal for Nix users who want to personalize and efficiently manage their desktop across multiple systems.\r\n\r\nFor all Nix(OS) users who are not afraid of writing configuration files in Nix language.",
+              "startsAt": "2024-03-14T11:00:00",
+              "endsAt": "2024-03-14T12:20:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "2c38eaac-07ea-4b63-9886-7c143aa42b61",
+                  "name": "Jacek Galowicz"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226413,
+                      "name": "Workshop"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226418,
+                      "name": "Intermediate"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 226437,
+                      "name": "Development environments"
+                    },
+                    {
+                      "id": 226438,
+                      "name": "Reproducible builds"
+                    },
+                    {
+                      "id": 226441,
+                      "name": "Deployment"
+                    },
+                    {
+                      "id": 227182,
+                      "name": "Nix at Work"
+                    }
+                  ],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "12:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "dd502509-1bc3-411d-9d64-a43074ccd498",
+              "title": "Lunch Break",
+              "description": null,
+              "startsAt": "2024-03-14T12:30:00",
+              "endsAt": "2024-03-14T13:30:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "13:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "597288",
+              "title": "Basic NixOS Modules",
+              "description": "We've all been there. We start playing with our NixOS config and see a cool blog post about modularizing your config. That would be so cool! ... wait how do modules work? The documentation is pretty sparse. And those \"beginner\" blog posts about modules are so beginner friendly.\r\n\r\nSo we are going to play with and build our own modules. But we aren't going to build packages; our output is going to be plaintext. We are going to see and feel how each of our options influences the output.",
+              "startsAt": "2024-03-14T13:30:00",
+              "endsAt": "2024-03-14T14:50:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "d6375f1c-755a-417c-ae76-a8ae9c4ad260",
+                  "name": "Daniel Baker"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226413,
+                      "name": "Workshop"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226417,
+                      "name": "Introductory and overview"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 227181,
+                      "name": "Teaching Nix"
+                    }
+                  ],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "15:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "601376",
+              "title": "Continuous Integration Hands-On",
+              "description": "Add state of the art continuous integration (CI) to your project.  With Nix, CI not only enhances code quality, it also provides automatic binary caching, speeding up development and deployment.  We'll cover the basics, gotchas, and tips and tricks for CI in Nix-based projects, and then help you apply them to your own project.  Mentors will be available to help work through any issues you encounter.  Our goal is for everyone to leave the workshop with a fully set up CI process in production.",
+              "startsAt": "2024-03-14T15:00:00",
+              "endsAt": "2024-03-14T16:20:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "5918750a-480b-4404-a9dd-6004c207409e",
+                  "name": "Ryan Trinkle"
+                },
+                {
+                  "id": "94185615-04d6-465d-a12f-020e0536147e",
+                  "name": "John Ericson"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226413,
+                      "name": "Workshop"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226417,
+                      "name": "Introductory and overview"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 226437,
+                      "name": "Development environments"
+                    },
+                    {
+                      "id": 226438,
+                      "name": "Reproducible builds"
+                    },
+                    {
+                      "id": 226441,
+                      "name": "Deployment"
+                    },
+                    {
+                      "id": 227182,
+                      "name": "Nix at Work"
+                    }
+                  ],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "16:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "841d48e7-1b7a-4679-931d-6efec9294188",
+              "title": "Lightning Talks",
+              "description": "Talks will be strictly limited to 5 minutes.",
+              "startsAt": "2024-03-14T16:30:00",
+              "endsAt": "2024-03-14T17:30:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "21:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "8997e16f-5ab8-4d7a-87ae-37e314da8324",
+              "title": "Karaoke",
+              "description": "This is not actually at the conference, but we're going out and we're going to tear up a karaoke stage.",
+              "startsAt": "2024-03-14T21:00:00",
+              "endsAt": "2024-03-14T23:00:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-03-15T00:00:00",
+    "isDefault": false,
+    "rooms": [
+      {
+        "id": 42474,
+        "name": "Room 1",
+        "sessions": [
+          {
+            "id": "8324ce35-d5c3-4b99-9a0a-1e14c6785183",
+            "title": "Opening Ceremony",
+            "description": null,
+            "startsAt": "2024-03-15T09:15:00",
+            "endsAt": "2024-03-15T09:30:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          },
+          {
+            "id": "588871",
+            "title": "Nix is a better Docker image builder than Docker's image builder",
+            "description": "Docker is everywhere, but Nix is not. Nix lets you build Docker images that are easier to deploy than images made with the normal Docker build flow. Want to learn how to make images with a 100% build efficiency and turn your application deployments from pushing many layers at a time to only pushing what actually changed? You can do it with Nix.",
+            "startsAt": "2024-03-15T09:30:00",
+            "endsAt": "2024-03-15T09:55:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "e626f3f3-b329-4ed3-b79d-330b7be47111",
+                "name": "Xe Iaso"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226436,
+                    "name": "Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226825,
+                    "name": "Everyone"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 226440,
+                    "name": "NixOS"
+                  },
+                  {
+                    "id": 226441,
+                    "name": "Deployment"
+                  }
+                ],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "601590",
+            "title": "Lessons learned developing systemd in stage 1",
+            "description": "When NixOS boots up, the first userspace code that the Linux kernel runs is called \"stage 1\". Its main job is to configure the file systems used by the OS before starting it. This can get quite complicated, and systemd is here to help.\r\n\r\nI will describe the goals of rewriting stage 1 to use systemd. I will also talk about how these seemingly small choices, like how to handle the first few seconds of boot, or the choice of my online username, can have unexpectedly significant results.",
+            "startsAt": "2024-03-15T10:00:00",
+            "endsAt": "2024-03-15T10:25:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "f172b594-ca09-44b0-8b13-f31dc0178ef0",
+                "name": "Will Fancher"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226436,
+                    "name": "Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226418,
+                    "name": "Intermediate"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "601579",
+            "title": "Easier NixOS self-hosting with module contracts",
+            "description": "The Nix ecosystem is a game changer for self hosting.\r\n\r\nDepency management, deployment tooling, secret management, rollbacks, NixOS modules, systemd integration, unit and NixOS VM tests all come together thanks to the Nix language to help us serenely deploy and maintain self hosted applications.\r\n\r\nThis talk shows how uniformizing NixOS options for modules achieving the same goal (SSO, backup, etc.) can move Nix one step forward to be an industry leader in the Server Management tooling space.",
+            "startsAt": "2024-03-15T10:30:00",
+            "endsAt": "2024-03-15T10:55:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "bc4d056d-d274-4522-89c0-934a1cfafc68",
+                "name": "Pierre Penninckx"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226436,
+                    "name": "Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226825,
+                    "name": "Everyone"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "b68d785e-8531-4588-9b17-97feeb6f8d76",
+            "title": "Break",
+            "description": null,
+            "startsAt": "2024-03-15T11:00:00",
+            "endsAt": "2024-03-15T11:30:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          },
+          {
+            "id": "601506",
+            "title": "Substituters and remote builders",
+            "description": "Presenting a low barrier of entry methods to use Nix caching and substituters",
+            "startsAt": "2024-03-15T11:30:00",
+            "endsAt": "2024-03-15T11:55:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "4145bd2c-e806-42e4-90c1-cdf9ac53ab72",
+                "name": "Tom Bereknyei"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226436,
+                    "name": "Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226825,
+                    "name": "Everyone"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 227181,
+                    "name": "Teaching Nix"
+                  }
+                ],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "598362",
+            "title": "Building Robots with Nix and Bazel",
+            "description": "Or: on the importance of overlays when targeting a heterogeneous set of platforms in a monorepo.\r\n\r\nWe build software for multiple target platforms -- bare metal, embedded aarch64, Windows, and x86_64. Each may require a different set of toolchains, tooling, and libraries, which we provide with Nix via custom overlays.\r\n\r\nIn this talk I will cover\r\n1. Our motivations for using Nix and Bazel\r\n2. The role of overlays in our build system\r\n3. A retrospective on what we've learned",
+            "startsAt": "2024-03-15T12:00:00",
+            "endsAt": "2024-03-15T12:25:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "557d75e3-6259-4e50-8ba9-a594474a112c",
+                "name": "Badi' Abdul-Wahid"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226436,
+                    "name": "Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226825,
+                    "name": "Everyone"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "669f75f1-7fa4-49b6-9719-a2905e95002f",
+            "title": "Lunch Break",
+            "description": null,
+            "startsAt": "2024-03-15T12:30:00",
+            "endsAt": "2024-03-15T13:30:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          },
+          {
+            "id": "601531",
+            "title": "Nix State of the Union 2024",
+            "description": "Cover the dynamic landscape of Nix's growth, innovation, and future possibilities. This session will provide a comprehensive overview of the major milestones Nix has achieved over 2023 from key leads in the community and the foundation board members, the challenges we've faced, and the exciting developments on the horizon.",
+            "startsAt": "2024-03-15T13:30:00",
+            "endsAt": "2024-03-15T13:55:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "a189ab4e-2522-4eb3-8dee-a434352871f8",
+                "name": "Ron Efroni Rotman"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226436,
+                    "name": "Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226825,
+                    "name": "Everyone"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "600251",
+            "title": "The case for Nix on the home server",
+            "description": "Why is Nix a good choice for a home server? Learn how Nix enables maintenance free, secure, and reproducible home servers. The talk will cover why Nix is a powerful choice compared to other technologies like Docker or Ansible. It will also showcase how Nix makes it easy to get up and running with server applications such as Nginx, Wireguard, Jellyfin, Samba, and more.\r\n",
+            "startsAt": "2024-03-15T14:00:00",
+            "endsAt": "2024-03-15T14:25:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "c248fa00-a1ae-4c58-8c2a-8c814bd7b79d",
+                "name": "Samir Rashid"
+              },
+              {
+                "id": "59a5af5a-a21d-4bf0-b7a4-d0ffb36f5551",
+                "name": "Anthony Tarbinian"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226436,
+                    "name": "Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226417,
+                    "name": "Introductory and overview"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 226441,
+                    "name": "Deployment"
+                  }
+                ],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "592501",
+            "title": "[High|Low]Lights of Adopting Nix at Looker (Google GCP)",
+            "description": "A look at our adoption of Nix at Looker, now Google GCP. I will go over the setup, adoption, broader community, and challenges.",
+            "startsAt": "2024-03-15T14:30:00",
+            "endsAt": "2024-03-15T14:55:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "7da026fd-65c9-4f84-8ffa-b783e9ab6950",
+                "name": "Farid Zakaria"
+              }
+            ],
+            "categories": [
+              {
+                "id": 64344,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 226436,
+                    "name": "Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 64346,
+                "name": "Level",
+                "categoryItems": [
+                  {
+                    "id": 226825,
+                    "name": "Everyone"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 64354,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 227182,
+                    "name": "Nix at Work"
+                  },
+                  {
+                    "id": 227180,
+                    "name": "Experience Report"
+                  }
+                ],
+                "sort": 7
+              }
+            ],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": "Accepted",
+            "isInformed": true,
+            "isConfirmed": true
+          },
+          {
+            "id": "2f1b4b36-80b4-4605-a7c0-f3648d0b7678",
+            "title": "UnConference",
+            "description": "Pick a topic and grab some people to go talk about it. There's not much structure here. That's the point!",
+            "startsAt": "2024-03-15T15:00:00",
+            "endsAt": "2024-03-15T17:00:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          },
+          {
+            "id": "5ed7ac52-d866-46f5-a812-bf9e6561e36e",
+            "title": "Closing Ceremony",
+            "description": null,
+            "startsAt": "2024-03-15T17:00:00",
+            "endsAt": "2024-03-15T17:15:00",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 42474,
+            "room": "Room 1",
+            "liveUrl": null,
+            "recordingUrl": null,
+            "status": null,
+            "isInformed": false,
+            "isConfirmed": false
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      }
+    ],
+    "timeSlots": [
+      {
+        "slotStart": "09:15:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "8324ce35-d5c3-4b99-9a0a-1e14c6785183",
+              "title": "Opening Ceremony",
+              "description": null,
+              "startsAt": "2024-03-15T09:15:00",
+              "endsAt": "2024-03-15T09:30:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "09:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "588871",
+              "title": "Nix is a better Docker image builder than Docker's image builder",
+              "description": "Docker is everywhere, but Nix is not. Nix lets you build Docker images that are easier to deploy than images made with the normal Docker build flow. Want to learn how to make images with a 100% build efficiency and turn your application deployments from pushing many layers at a time to only pushing what actually changed? You can do it with Nix.",
+              "startsAt": "2024-03-15T09:30:00",
+              "endsAt": "2024-03-15T09:55:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "e626f3f3-b329-4ed3-b79d-330b7be47111",
+                  "name": "Xe Iaso"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226436,
+                      "name": "Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226825,
+                      "name": "Everyone"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 226440,
+                      "name": "NixOS"
+                    },
+                    {
+                      "id": 226441,
+                      "name": "Deployment"
+                    }
+                  ],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "10:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "601590",
+              "title": "Lessons learned developing systemd in stage 1",
+              "description": "When NixOS boots up, the first userspace code that the Linux kernel runs is called \"stage 1\". Its main job is to configure the file systems used by the OS before starting it. This can get quite complicated, and systemd is here to help.\r\n\r\nI will describe the goals of rewriting stage 1 to use systemd. I will also talk about how these seemingly small choices, like how to handle the first few seconds of boot, or the choice of my online username, can have unexpectedly significant results.",
+              "startsAt": "2024-03-15T10:00:00",
+              "endsAt": "2024-03-15T10:25:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "f172b594-ca09-44b0-8b13-f31dc0178ef0",
+                  "name": "Will Fancher"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226436,
+                      "name": "Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226418,
+                      "name": "Intermediate"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "10:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "601579",
+              "title": "Easier NixOS self-hosting with module contracts",
+              "description": "The Nix ecosystem is a game changer for self hosting.\r\n\r\nDepency management, deployment tooling, secret management, rollbacks, NixOS modules, systemd integration, unit and NixOS VM tests all come together thanks to the Nix language to help us serenely deploy and maintain self hosted applications.\r\n\r\nThis talk shows how uniformizing NixOS options for modules achieving the same goal (SSO, backup, etc.) can move Nix one step forward to be an industry leader in the Server Management tooling space.",
+              "startsAt": "2024-03-15T10:30:00",
+              "endsAt": "2024-03-15T10:55:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "bc4d056d-d274-4522-89c0-934a1cfafc68",
+                  "name": "Pierre Penninckx"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226436,
+                      "name": "Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226825,
+                      "name": "Everyone"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "11:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "b68d785e-8531-4588-9b17-97feeb6f8d76",
+              "title": "Break",
+              "description": null,
+              "startsAt": "2024-03-15T11:00:00",
+              "endsAt": "2024-03-15T11:30:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "11:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "601506",
+              "title": "Substituters and remote builders",
+              "description": "Presenting a low barrier of entry methods to use Nix caching and substituters",
+              "startsAt": "2024-03-15T11:30:00",
+              "endsAt": "2024-03-15T11:55:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "4145bd2c-e806-42e4-90c1-cdf9ac53ab72",
+                  "name": "Tom Bereknyei"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226436,
+                      "name": "Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226825,
+                      "name": "Everyone"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 227181,
+                      "name": "Teaching Nix"
+                    }
+                  ],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "12:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "598362",
+              "title": "Building Robots with Nix and Bazel",
+              "description": "Or: on the importance of overlays when targeting a heterogeneous set of platforms in a monorepo.\r\n\r\nWe build software for multiple target platforms -- bare metal, embedded aarch64, Windows, and x86_64. Each may require a different set of toolchains, tooling, and libraries, which we provide with Nix via custom overlays.\r\n\r\nIn this talk I will cover\r\n1. Our motivations for using Nix and Bazel\r\n2. The role of overlays in our build system\r\n3. A retrospective on what we've learned",
+              "startsAt": "2024-03-15T12:00:00",
+              "endsAt": "2024-03-15T12:25:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "557d75e3-6259-4e50-8ba9-a594474a112c",
+                  "name": "Badi' Abdul-Wahid"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226436,
+                      "name": "Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226825,
+                      "name": "Everyone"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "12:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "669f75f1-7fa4-49b6-9719-a2905e95002f",
+              "title": "Lunch Break",
+              "description": null,
+              "startsAt": "2024-03-15T12:30:00",
+              "endsAt": "2024-03-15T13:30:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "13:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "601531",
+              "title": "Nix State of the Union 2024",
+              "description": "Cover the dynamic landscape of Nix's growth, innovation, and future possibilities. This session will provide a comprehensive overview of the major milestones Nix has achieved over 2023 from key leads in the community and the foundation board members, the challenges we've faced, and the exciting developments on the horizon.",
+              "startsAt": "2024-03-15T13:30:00",
+              "endsAt": "2024-03-15T13:55:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "a189ab4e-2522-4eb3-8dee-a434352871f8",
+                  "name": "Ron Efroni Rotman"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226436,
+                      "name": "Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226825,
+                      "name": "Everyone"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "14:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "600251",
+              "title": "The case for Nix on the home server",
+              "description": "Why is Nix a good choice for a home server? Learn how Nix enables maintenance free, secure, and reproducible home servers. The talk will cover why Nix is a powerful choice compared to other technologies like Docker or Ansible. It will also showcase how Nix makes it easy to get up and running with server applications such as Nginx, Wireguard, Jellyfin, Samba, and more.\r\n",
+              "startsAt": "2024-03-15T14:00:00",
+              "endsAt": "2024-03-15T14:25:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "c248fa00-a1ae-4c58-8c2a-8c814bd7b79d",
+                  "name": "Samir Rashid"
+                },
+                {
+                  "id": "59a5af5a-a21d-4bf0-b7a4-d0ffb36f5551",
+                  "name": "Anthony Tarbinian"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226436,
+                      "name": "Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226417,
+                      "name": "Introductory and overview"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 226441,
+                      "name": "Deployment"
+                    }
+                  ],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "14:30:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "592501",
+              "title": "[High|Low]Lights of Adopting Nix at Looker (Google GCP)",
+              "description": "A look at our adoption of Nix at Looker, now Google GCP. I will go over the setup, adoption, broader community, and challenges.",
+              "startsAt": "2024-03-15T14:30:00",
+              "endsAt": "2024-03-15T14:55:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "7da026fd-65c9-4f84-8ffa-b783e9ab6950",
+                  "name": "Farid Zakaria"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 64344,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 226436,
+                      "name": "Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 64346,
+                  "name": "Level",
+                  "categoryItems": [
+                    {
+                      "id": 226825,
+                      "name": "Everyone"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 64354,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 227182,
+                      "name": "Nix at Work"
+                    },
+                    {
+                      "id": 227180,
+                      "name": "Experience Report"
+                    }
+                  ],
+                  "sort": 7
+                }
+              ],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": "Accepted",
+              "isInformed": true,
+              "isConfirmed": true
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "15:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "2f1b4b36-80b4-4605-a7c0-f3648d0b7678",
+              "title": "UnConference",
+              "description": "Pick a topic and grab some people to go talk about it. There's not much structure here. That's the point!",
+              "startsAt": "2024-03-15T15:00:00",
+              "endsAt": "2024-03-15T17:00:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "17:00:00",
+        "rooms": [
+          {
+            "id": 42474,
+            "name": "Room 1",
+            "session": {
+              "id": "5ed7ac52-d866-46f5-a812-bf9e6561e36e",
+              "title": "Closing Ceremony",
+              "description": null,
+              "startsAt": "2024-03-15T17:00:00",
+              "endsAt": "2024-03-15T17:15:00",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 42474,
+              "room": "Room 1",
+              "liveUrl": null,
+              "recordingUrl": null,
+              "status": null,
+              "isInformed": false,
+              "isConfirmed": false
+            },
+            "index": 0
+          }
+        ]
+      }
+    ]
+  }
+]
