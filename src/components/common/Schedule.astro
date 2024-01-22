@@ -10,6 +10,10 @@ let timeOptions = {
     timezone: 'America/Los_Angeles'
 };
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 const {data: schedule} = await getEntry('schedule', 'all');
 
 function getDailyData(schedule) {
@@ -49,7 +53,7 @@ function parseSchedule(data) {
       elem['format'] = 'break';
     }
     if (elem['title'].includes('Lightning Talks')) {
-      elem['format'] = 'lightning-talks';
+      elem['format'] = 'lightning talks';
     }
     if (elem['title'].includes('Karaoke')) {
       elem['format'] = 'karaoke';
@@ -125,7 +129,7 @@ let data = addStartOfDayEntry(parseSchedule(getDailyData(schedule)))
                         </span>
                     ) : null}
 
-                    {item.format === "lightning-talks" ? (
+                    {item.format === "lightning talks" ? (
                         <span class="slot-time text-md font-black py-2 text-center bg-black text-gray-50 rounded-l-md border-l-8 border-l-orange-500">
                             {(new Date(item.startsAt)).toLocaleTimeString([], timeOptions)}
                         </span>
@@ -170,7 +174,7 @@ let data = addStartOfDayEntry(parseSchedule(getDailyData(schedule)))
                                     </span>
                                 )
                             })}
-                            {item.title}
+                            {capitalizeFirstLetter(item.format)}
                         </p>
 
                         {item.description !== null ? (
