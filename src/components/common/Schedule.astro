@@ -178,7 +178,7 @@ let data = addStartOfDayEntry(parseSchedule(getDailyData(schedule)))
                         </p>
 
                         {item.description !== null ? (
-                            <div class="p-2 talk-abstract" set:html={marked.parse(item.description)}/>
+                            <div class="p-2 talk-abstract prose max-w-none text-white marker:text-white" set:html={marked.parse(item.description)}/>
                         ) : null }
                     </div>
                 </div>
