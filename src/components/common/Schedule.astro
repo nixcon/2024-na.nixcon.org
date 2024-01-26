@@ -115,7 +115,7 @@ let data = addStartOfDayEntry(parseSchedule(getDailyData(schedule)))
 
             return (
                 <div key={index}
-                     id={item.id}
+                     id={item.title.replace(/\s+/g, '-').toLowerCase()}
                      class="slot"
                 >
 
@@ -163,7 +163,11 @@ let data = addStartOfDayEntry(parseSchedule(getDailyData(schedule)))
 
                     <div class="slot-info border border-black rounded-lg md:my-2 rounded-tl-none">
 
-                        <h2 class="text-md font-bold p-2 bg-black text-gray-50" >{item.title}</h2>
+                        <h2 class="text-md font-bold p-2 bg-black text-gray-50">
+                            <a href={`#${item.title.replace(/\s+/g, '-').toLowerCase()}`} class="no-underline">
+                                {item.title}
+                            </a>
+                        </h2>
 
                         <p class="block bg-gray-800 text-white text-bold px-2 py-1">
                             { item.speakers.map((speaker, index) => {
