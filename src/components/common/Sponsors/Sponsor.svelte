@@ -6,10 +6,10 @@
     extraClasses = "";
 
   const sizes = {
-    diamond: "w-72",
-    gold: "w-56",
-    silver: "w-36",
-    bronze: "h-10"
+    diamond: "w-72 max-h-16",
+    gold:    "w-56 max-h-14",
+    silver:  "w-48 max-h-12",
+    bronze:  "w-36 max-h-10"
   };
 
   if (image === undefined) throw "Image not set";
