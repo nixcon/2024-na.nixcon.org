@@ -6,11 +6,10 @@
     extraClasses = "";
 
   const sizes = {
-    // removing formatting until we have sponsors
-    // also no diamond formatting yet
-    //gold: "w-56",
-    //silver: "w-36",
-    //bronze: "h-10"
+    diamond: "w-72 max-h-16",
+    gold:    "w-56 max-h-14",
+    silver:  "w-48 max-h-12",
+    bronze:  "w-36 max-h-10"
   };
 
   if (image === undefined) throw "Image not set";
@@ -21,7 +20,7 @@
   let classes = `${sizes[level]} ${extraClasses}`;
 </script>
 
-<li>
+<li class="flex items-center">
   <a href={url} target="_blank" rel="external">
     <img {src} class={classes} {alt} />
   </a>
