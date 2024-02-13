@@ -20,7 +20,7 @@
   let classes = `${sizes[level]} ${extraClasses}`;
 </script>
 
-<li>
+<li class="flex items-center">
   <a href={url} target="_blank" rel="external">
     <img {src} class={classes} {alt} />
   </a>
