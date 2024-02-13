@@ -26,6 +26,9 @@ jobs:
 
       - run: npm i
 
+      - name: Fetch Schedule data
+        run: npm run fetch-data
+
       - name: Change config for PR preview build
         run: |
           sed -i '11 i  "base": "/pr-preview/pr-${{ github.event.number }}",' astro.config.mjs
