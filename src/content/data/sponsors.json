@@ -2,8 +2,38 @@
   "diamond": [
   ],
   "gold": [
+    {
+      "image": "antithesis.svg",
+      "alt": "Antithesis",
+      "url": "https://antithesis.com/"
+    },
+    {
+      "image": "pdt.svg",
+      "alt": "PDT Partners",
+      "url": "https://pdtpartners.com/"
+    },
+    {
+      "image": "flox.svg",
+      "alt": "flox",
+      "url": "https://flox.dev/"
+    }
   ],
   "silver": [
+    {
+        "image": "tweag.svg",
+        "alt": "Tweag",
+        "url": "https://www.tweag.io/"
+    },
+    {
+      "image": "obsidian.svg",
+      "alt": "Obsidian Systems",
+      "url": "https://obsidian.systems/"
+    },
+    {
+      "image": "replit.svg",
+      "alt": "Replit",
+      "url": "https://replit.com/"
+    }
   ],
   "bronze": [
   ],

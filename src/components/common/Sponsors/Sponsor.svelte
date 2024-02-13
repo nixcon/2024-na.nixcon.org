@@ -6,11 +6,10 @@
     extraClasses = "";
 
   const sizes = {
-    // removing formatting until we have sponsors
-    // also no diamond formatting yet
-    //gold: "w-56",
-    //silver: "w-36",
-    //bronze: "h-10"
+    diamond: "w-72",
+    gold: "w-56",
+    silver: "w-36",
+    bronze: "h-10"
   };
 
   if (image === undefined) throw "Image not set";
