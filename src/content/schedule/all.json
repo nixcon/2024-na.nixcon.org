@@ -84,7 +84,7 @@
           {
             "id": "596570",
             "title": "Managing your Userland with Home-Manager",
-            "description": "Unleash the full potential of your user environment with the \"Portable Userlands with Home-Manager\" workshop. Discover how to use Home-Manager to create reproducible, portable configurations for your applications and tools. Ideal for Nix users who want to personalize and efficiently manage their desktop across multiple systems.\r\n\r\nFor all Nix(OS) users who are not afraid of writing configuration files in Nix language.",
+            "description": "Unleash the full potential of your user environment with the \"Portable Userlands with Home-Manager\" workshop. Discover how to use Home-Manager to create reproducible, portable configurations for your applications and tools. Ideal for Nix users who want to personalize and efficiently manage their desktop across multiple systems.\r\n\r\nFor all Nix(OS) users who are not afraid of writing configuration files in the Nix language.",
             "startsAt": "2024-03-14T11:00:00",
             "endsAt": "2024-03-14T12:20:00",
             "isServiceSession": false,
@@ -171,7 +171,7 @@
           {
             "id": "597288",
             "title": "Basic NixOS Modules",
-            "description": "We've all been there. We start playing with our NixOS config and see a cool blog post about modularizing your config. That would be so cool! ... wait how do modules work? The documentation is pretty sparse. And those \"beginner\" blog posts about modules are so beginner friendly.\r\n\r\nSo we are going to play with and build our own modules. But we aren't going to build packages; our output is going to be plaintext. We are going to see and feel how each of our options influences the output.",
+            "description": "We've all been there. We start playing with our NixOS config and see a cool blog post about modularizing your config. That would be so cool! ... wait how do modules work? The documentation is pretty sparse. And those \"beginner\" blog posts about modules are so beginner friendly.\r\n\r\nSo we are going to play with and build our own modules. But we aren't going to build packages; our output is going to be plain text. We are going to see and feel how each of our options influences the output.",
             "startsAt": "2024-03-14T13:30:00",
             "endsAt": "2024-03-14T14:50:00",
             "isServiceSession": false,
@@ -228,7 +228,7 @@
           {
             "id": "601376",
             "title": "Continuous Integration Hands-On",
-            "description": "Add state of the art continuous integration (CI) to your project.  With Nix, CI not only enhances code quality, it also provides automatic binary caching, speeding up development and deployment.  We'll cover the basics, gotchas, and tips and tricks for CI in Nix-based projects, and then help you apply them to your own project.  Mentors will be available to help work through any issues you encounter.  Our goal is for everyone to leave the workshop with a fully set up CI process in production.",
+            "description": "Add state of the art continuous integration (CI) to your project.  With Nix, CI not only enhances code quality, it also provides automatic binary caching, speeding up development and deployment.  We'll cover the basics, gotchas, and tips and tricks for CI in Nix-based projects, and then help you apply them to your own project.  Mentors will be available to help work through any issues you encounter.  Our goal is for everyone to leave the workshop with a fully set up CI process in production.\r\n\r\nIf you're thinking of attending, we'd love your input on the topics you're most interested in covering at this workshop.  If you have a minute, please let us know by filling out this form: https://docs.google.com/forms/d/e/1FAIpQLSdl4YArAWxHcjQAZcAj0hmgrJN7TBFoyh2DiM9fPgFYivtAwA/viewform",
             "startsAt": "2024-03-14T15:00:00",
             "endsAt": "2024-03-14T16:20:00",
             "isServiceSession": false,
@@ -490,7 +490,7 @@
             "session": {
               "id": "596570",
               "title": "Managing your Userland with Home-Manager",
-              "description": "Unleash the full potential of your user environment with the \"Portable Userlands with Home-Manager\" workshop. Discover how to use Home-Manager to create reproducible, portable configurations for your applications and tools. Ideal for Nix users who want to personalize and efficiently manage their desktop across multiple systems.\r\n\r\nFor all Nix(OS) users who are not afraid of writing configuration files in Nix language.",
+              "description": "Unleash the full potential of your user environment with the \"Portable Userlands with Home-Manager\" workshop. Discover how to use Home-Manager to create reproducible, portable configurations for your applications and tools. Ideal for Nix users who want to personalize and efficiently manage their desktop across multiple systems.\r\n\r\nFor all Nix(OS) users who are not afraid of writing configuration files in the Nix language.",
               "startsAt": "2024-03-14T11:00:00",
               "endsAt": "2024-03-14T12:20:00",
               "isServiceSession": false,
@@ -597,7 +597,7 @@
             "session": {
               "id": "597288",
               "title": "Basic NixOS Modules",
-              "description": "We've all been there. We start playing with our NixOS config and see a cool blog post about modularizing your config. That would be so cool! ... wait how do modules work? The documentation is pretty sparse. And those \"beginner\" blog posts about modules are so beginner friendly.\r\n\r\nSo we are going to play with and build our own modules. But we aren't going to build packages; our output is going to be plaintext. We are going to see and feel how each of our options influences the output.",
+              "description": "We've all been there. We start playing with our NixOS config and see a cool blog post about modularizing your config. That would be so cool! ... wait how do modules work? The documentation is pretty sparse. And those \"beginner\" blog posts about modules are so beginner friendly.\r\n\r\nSo we are going to play with and build our own modules. But we aren't going to build packages; our output is going to be plain text. We are going to see and feel how each of our options influences the output.",
               "startsAt": "2024-03-14T13:30:00",
               "endsAt": "2024-03-14T14:50:00",
               "isServiceSession": false,
@@ -664,7 +664,7 @@
             "session": {
               "id": "601376",
               "title": "Continuous Integration Hands-On",
-              "description": "Add state of the art continuous integration (CI) to your project.  With Nix, CI not only enhances code quality, it also provides automatic binary caching, speeding up development and deployment.  We'll cover the basics, gotchas, and tips and tricks for CI in Nix-based projects, and then help you apply them to your own project.  Mentors will be available to help work through any issues you encounter.  Our goal is for everyone to leave the workshop with a fully set up CI process in production.",
+              "description": "Add state of the art continuous integration (CI) to your project.  With Nix, CI not only enhances code quality, it also provides automatic binary caching, speeding up development and deployment.  We'll cover the basics, gotchas, and tips and tricks for CI in Nix-based projects, and then help you apply them to your own project.  Mentors will be available to help work through any issues you encounter.  Our goal is for everyone to leave the workshop with a fully set up CI process in production.\r\n\r\nIf you're thinking of attending, we'd love your input on the topics you're most interested in covering at this workshop.  If you have a minute, please let us know by filling out this form: https://docs.google.com/forms/d/e/1FAIpQLSdl4YArAWxHcjQAZcAj0hmgrJN7TBFoyh2DiM9fPgFYivtAwA/viewform",
               "startsAt": "2024-03-14T15:00:00",
               "endsAt": "2024-03-14T16:20:00",
               "isServiceSession": false,
@@ -938,7 +938,7 @@
           {
             "id": "601579",
             "title": "Easier NixOS self-hosting with module contracts",
-            "description": "The Nix ecosystem is a game changer for self hosting.\r\n\r\nDepency management, deployment tooling, secret management, rollbacks, NixOS modules, systemd integration, unit and NixOS VM tests all come together thanks to the Nix language to help us serenely deploy and maintain self hosted applications.\r\n\r\nThis talk shows how uniformizing NixOS options for modules achieving the same goal (SSO, backup, etc.) can move Nix one step forward to be an industry leader in the Server Management tooling space.",
+            "description": "The Nix ecosystem is a game changer for self hosting.\r\n\r\nDependency management, deployment tooling, secret management, rollbacks, NixOS modules, systemd integration, unit and NixOS VM tests all come together thanks to the Nix language to help us serenely deploy and maintain self hosted applications.\r\n\r\nThis talk shows how standardizing NixOS options for modules achieving the same goal (SSO, backup, etc.) can move Nix one step forward to be an industry leader in the Server Management tooling space.",
             "startsAt": "2024-03-15T10:30:00",
             "endsAt": "2024-03-15T10:55:00",
             "isServiceSession": false,
@@ -1008,7 +1008,7 @@
           {
             "id": "601506",
             "title": "Substituters and remote builders",
-            "description": "Presenting a low barrier of entry methods to use Nix caching and substituters",
+            "description": "Presenting low barrier of entry methods to use Nix caching and substituters.",
             "startsAt": "2024-03-15T11:30:00",
             "endsAt": "2024-03-15T11:55:00",
             "isServiceSession": false,
@@ -1257,6 +1257,10 @@
               {
                 "id": "7da026fd-65c9-4f84-8ffa-b783e9ab6950",
                 "name": "Farid Zakaria"
+              },
+              {
+                "id": "5bda3486-5975-4dc3-95ba-f455667cc663",
+                "name": "Micah Catlin"
               }
             ],
             "categories": [
@@ -1517,7 +1521,7 @@
             "session": {
               "id": "601579",
               "title": "Easier NixOS self-hosting with module contracts",
-              "description": "The Nix ecosystem is a game changer for self hosting.\r\n\r\nDepency management, deployment tooling, secret management, rollbacks, NixOS modules, systemd integration, unit and NixOS VM tests all come together thanks to the Nix language to help us serenely deploy and maintain self hosted applications.\r\n\r\nThis talk shows how uniformizing NixOS options for modules achieving the same goal (SSO, backup, etc.) can move Nix one step forward to be an industry leader in the Server Management tooling space.",
+              "description": "The Nix ecosystem is a game changer for self hosting.\r\n\r\nDependency management, deployment tooling, secret management, rollbacks, NixOS modules, systemd integration, unit and NixOS VM tests all come together thanks to the Nix language to help us serenely deploy and maintain self hosted applications.\r\n\r\nThis talk shows how standardizing NixOS options for modules achieving the same goal (SSO, backup, etc.) can move Nix one step forward to be an industry leader in the Server Management tooling space.",
               "startsAt": "2024-03-15T10:30:00",
               "endsAt": "2024-03-15T10:55:00",
               "isServiceSession": false,
@@ -1607,7 +1611,7 @@
             "session": {
               "id": "601506",
               "title": "Substituters and remote builders",
-              "description": "Presenting a low barrier of entry methods to use Nix caching and substituters",
+              "description": "Presenting low barrier of entry methods to use Nix caching and substituters.",
               "startsAt": "2024-03-15T11:30:00",
               "endsAt": "2024-03-15T11:55:00",
               "isServiceSession": false,
@@ -1906,6 +1910,10 @@
                 {
                   "id": "7da026fd-65c9-4f84-8ffa-b783e9ab6950",
                   "name": "Farid Zakaria"
+                },
+                {
+                  "id": "5bda3486-5975-4dc3-95ba-f455667cc663",
+                  "name": "Micah Catlin"
                 }
               ],
               "categories": [
