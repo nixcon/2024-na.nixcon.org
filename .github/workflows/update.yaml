@@ -1,0 +1,28 @@
+name: Fetch Schedule and Update
+
+on:
+  schedule:
+    # check for updates once a day
+    - cron: '0 20 * * *'
+  workflow_dispatch: # allows manual triggering
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Timezone
+        uses: szenius/set-timezone@v1.2
+        with:
+          timezoneLinux: "America/Los_Angeles"
+
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: npm Install
+        run: npm i
+
+      - name: Fetch Schedule data
+        run: npm run fetch-data
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
