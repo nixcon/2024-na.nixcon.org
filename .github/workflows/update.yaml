@@ -31,11 +31,12 @@ jobs:
         run: npm run fetch-data
 
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v6
 
       - name: Change config for PR preview build
         run: |
-          sed -i '11 i  "base": "/pr-preview/pr-${{ github.event.number }}",' astro.config.mjs
+          sed -i '11 i  "base": "/pr-preview/pr-${{ steps.cpr.outputs.pull-request-number }}",' astro.config.mjs
 
       - name: Build
         run: |
