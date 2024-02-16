@@ -18,12 +18,6 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Setup Nix
-        uses: DeterminateSystems/nix-installer-action@v4
-
-      - name: Setup Magic Cache
-        uses: DeterminateSystems/magic-nix-cache-action@v2
-
       - name: npm Install
         run: npm i
 
@@ -32,26 +26,3 @@ jobs:
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
-
-      - name: Change config for PR preview build
-        run: |
-          sed -i '11 i  "base": "/pr-preview/pr-${{ github.event.number }}",' astro.config.mjs
-
-      - name: Build
-        run: |
-          nix build
-
-      - name: Copy build result
-        run: |
-          cp -rv $(readlink -f result) out
-
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          source-dir: ./out/
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: website
-          path: out/**
