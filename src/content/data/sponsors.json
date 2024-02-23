@@ -33,6 +33,11 @@
       "image": "replit.svg",
       "alt": "Replit",
       "url": "https://replit.com/"
+    },
+    {
+      "image": "determinate-systems.svg",
+      "alt": "Determinate Systems",
+      "url": "https://determinate.systems/"
     }
   ],
   "bronze": [
