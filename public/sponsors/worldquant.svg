@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
-  <defs>
-    <linearGradient id="btn-nav-open-svg" y1="1" x2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#f72f18"></stop>
-      <stop offset="1" stop-color="#fa8c24"></stop>
-    </linearGradient>
-  </defs>
-  <path id="btn-nav-open-path" data-name="btn-nav-open-path" d="M-11180-4046v-36h36v36h-29v0Zm29-7.044v-21.912h-22v21.912Z" transform="translate(11180 4082)" fill="url(#btn-nav-open-svg)"></path>
-</svg>
