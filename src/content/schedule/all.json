@@ -1,7 +1,7 @@
 [
   {
     "date": "2024-03-14T00:00:00",
-    "isDefault": true,
+    "isDefault": false,
     "rooms": [
       {
         "id": 42474,
@@ -322,8 +322,8 @@
           },
           {
             "id": "8997e16f-5ab8-4d7a-87ae-37e314da8324",
-            "title": "Karaoke",
-            "description": "This is not actually at the conference, but we're going out and we're going to tear up a karaoke stage.",
+            "title": "Karaoke @ The Boulevard",
+            "description": "This is not actually at the conference, but we're going out and we're going to tear up a karaoke stage.\n\n3199 E Foothill Blvd Pasadena, CA 91107",
             "startsAt": "2024-03-14T21:00:00",
             "endsAt": "2024-03-14T23:00:00",
             "isServiceSession": true,
@@ -782,8 +782,8 @@
             "name": "Room 1",
             "session": {
               "id": "8997e16f-5ab8-4d7a-87ae-37e314da8324",
-              "title": "Karaoke",
-              "description": "This is not actually at the conference, but we're going out and we're going to tear up a karaoke stage.",
+              "title": "Karaoke @ The Boulevard",
+              "description": "This is not actually at the conference, but we're going out and we're going to tear up a karaoke stage.\n\n3199 E Foothill Blvd Pasadena, CA 91107",
               "startsAt": "2024-03-14T21:00:00",
               "endsAt": "2024-03-14T23:00:00",
               "isServiceSession": true,
