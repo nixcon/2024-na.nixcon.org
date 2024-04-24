@@ -14,7 +14,7 @@ const {data: recordingData} = await getEntry('data', 'recordings');
                     return <div
                             class="flex flex-col md:flex-row"
                     >
-                        <img class="w-full md:w-56 object-cover" alt={videoData.title} src={videoData.thumbnails.standard.url}>
+                        <img class="w-full md:w-56 object-contain" alt={videoData.title} src={videoData.thumbnails.standard.url}>
 
                         <div class="nixcon-gradient p-0.5 pt-0 md:pt-0.5 md:pl-0 w-full">
                             <div class="dark:bg-nixblue-900 bg-gray-200 h-full flex flex-col justify-between">
