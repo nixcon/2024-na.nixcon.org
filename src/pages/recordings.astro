@@ -12,7 +12,7 @@ const {data: recordingData} = await getEntry('data', 'recordings');
             {recordingData.items.map((videoItem) => {
                     const videoData = videoItem.snippet
                     return <div
-                            class="flex flex-col md:flex-row"
+                            class="flex flex-col md:flex-row items-center"
                     >
                         <img class="w-full md:w-56 object-contain" alt={videoData.title} src={videoData.thumbnails.standard.url}>
 
@@ -22,7 +22,7 @@ const {data: recordingData} = await getEntry('data', 'recordings');
                                     <h2 class="font-bold line-clamp-1">
                                         {videoData.title}
                                     </h2>
-                                    <div class="line-clamp-2">
+                                    <div class="line-clamp-6">
                                         <p set:html={marked.parse(videoData.description)}/>
                                     </div>
                                 </div>
