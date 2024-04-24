@@ -1,0 +1,574 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "cjIUNJR-Sc63r822QKzOc2GO_6Q",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "AEs8QOe3Em9GLqkeaAe-7XUNQ_8",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi4zMDg5MkQ5MEVDMEM1NTg2",
+      "snippet": {
+        "publishedAt": "2024-04-16T01:24:08Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Managing your Userland with Home-Manager",
+        "description": "Talk by \n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/managing-your-userland-home-manager\n\nUnleash the full potential of your user environment with the \"Portable Userlands with Home-Manager\" workshop. Discover how to use Home-Manager to create reproducible, portable configurations for your applications and tools. Ideal for Nix users who want to personalize and efficiently manage their desktop across multiple systems. For all Nix(OS) users who are not afraid of writing configuration files in Nix language.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/a0moHdy0-98/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/a0moHdy0-98/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/a0moHdy0-98/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/a0moHdy0-98/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/a0moHdy0-98/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "a0moHdy0-98"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "GkHe6b5wjXwpN8zHQUDbdC45Jhw",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi45ODRDNTg0QjA4NkFBNkQy",
+      "snippet": {
+        "publishedAt": "2024-04-16T01:24:08Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Basic NixOS Modules",
+        "description": "Talk by Daniel Baker\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/basic-nixos-modules\n\nWe've all been there. We start playing with our NixOS config and see a cool blog post about modularizing your config. That would be so cool! ... wait how do modules work? The documentation is pretty sparse. And those \"beginner\" blog posts about modules are so beginner friendly. So we are going to play with and build our own modules. But we aren't going to build packages; our output is going to be plaintext. We are going to see and feel how each of our options influences the output.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-Bfo3Byjwyg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-Bfo3Byjwyg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-Bfo3Byjwyg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/-Bfo3Byjwyg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/-Bfo3Byjwyg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "-Bfo3Byjwyg"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Mg9aeK8aICj3hRH9QinmgvVbvZw",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi41Mzk2QTAxMTkzNDk4MDhF",
+      "snippet": {
+        "publishedAt": "2024-04-16T01:24:08Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Continuous Integration Hands-On",
+        "description": "Talk by Ryan Trinkle\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/continuous-integration-hands\n\nAdd state of the art continuous integration (CI) to your project. With Nix, CI not only enhances code quality, it also provides automatic binary caching, speeding up development and deployment. We'll cover the basics, gotchas, and tips and tricks for CI in Nix-based projects, and then help you apply them to your own project. Mentors will be available to help work through any issues you encounter. Our goal is for everyone to leave the workshop with a fully set up CI process in production.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dL5figYSWU4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dL5figYSWU4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dL5figYSWU4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dL5figYSWU4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dL5figYSWU4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "dL5figYSWU4"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "LwgpNJfs0n15zxfekgKvQKej2pE",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi41QTY1Q0UxMTVCODczNThE",
+      "snippet": {
+        "publishedAt": "2024-04-16T01:24:08Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Lightning Talks",
+        "description": "Talk by \n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/lightning-talks\n\nA series of short 5 minute talks about all things Nix.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sNJNIcvYa4c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sNJNIcvYa4c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sNJNIcvYa4c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/sNJNIcvYa4c/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/sNJNIcvYa4c/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "sNJNIcvYa4c"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "hYbP8HPnZ64y2h0o_ALj6gyyewk",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi41MjE1MkI0OTQ2QzJGNzNG",
+      "snippet": {
+        "publishedAt": "2024-04-15T22:50:13Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Nix is a better Docker image builder than Docker's image builder",
+        "description": "Talk by Xe iaso\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/nix-better-docker-image-builder-dockers-image-builder\n\nDocker is everywhere, but Nix is not. Nix lets you build Docker images that are easier to deploy than images made with the normal Docker build flow. Want to learn how to make images with a 100% build efficiency and turn your application deployments from pushing many layers at a time to only pushing what actually changed? You can do it with Nix.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gXHG3-CZ7CU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gXHG3-CZ7CU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gXHG3-CZ7CU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gXHG3-CZ7CU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gXHG3-CZ7CU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "gXHG3-CZ7CU"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "ct5lSXnOPx8LiCrwcP4aWvJAoLI",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi4wMTcyMDhGQUE4NTIzM0Y5",
+      "snippet": {
+        "publishedAt": "2024-04-15T22:50:13Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Lessons learned developing systemd in stage 1",
+        "description": "Talk by Will Fancher\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/lessons-learned-developing-systemd-stage-1\n\nWhen NixOS boots up, the first userspace code that the Linux kernel runs is called \"stage 1\". Its main job is to configure the file systems used by the OS before starting it. This can get quite complicated, and systemd is here to help. I will describe the goals of rewriting stage 1 to use systemd. I will also talk about how these seemingly small choices, like how to handle the first few seconds of boot, or the choice of my online username, can have unexpectedly significant results.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/X-2zfHnHfU0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/X-2zfHnHfU0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/X-2zfHnHfU0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/X-2zfHnHfU0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/X-2zfHnHfU0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "X-2zfHnHfU0"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "y54MgUAQsnENDlomp_WZGA2D1jE",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi4xMkVGQjNCMUM1N0RFNEUx",
+      "snippet": {
+        "publishedAt": "2024-04-15T22:50:13Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Easier NixOS self-hosting with module contracts",
+        "description": "Talk by Pierre Penninckx\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/easier-nixos-self-hosting-module-contracts\n\nHow standardizing NixOS options for modules achieving the same goal (SSO, backup, etc.) can move Nix one step forward to be an industry leader in the Server Management tooling space.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/lw7PgphB9qM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/lw7PgphB9qM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/lw7PgphB9qM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/lw7PgphB9qM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/lw7PgphB9qM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "lw7PgphB9qM"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "auH-7rTtNoo2Y6N0sgByQOYCKaU",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi41MzJCQjBCNDIyRkJDN0VD",
+      "snippet": {
+        "publishedAt": "2024-04-15T22:50:13Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Substituters and remote builders",
+        "description": "Talk by Tom Bereknyei\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/substituters-and-remote-builders\n\nLow barrier of entry methods to use Nix caching and substituters",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qo4GymNwMcQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qo4GymNwMcQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qo4GymNwMcQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/qo4GymNwMcQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/qo4GymNwMcQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "qo4GymNwMcQ"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "rXbjRwZ0-m-S57HGj5pYt4Ifl8I",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi41NkI0NEY2RDEwNTU3Q0M2",
+      "snippet": {
+        "publishedAt": "2024-04-15T22:50:13Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Building Robots with Nix and Bazel",
+        "description": "Talk by Badi Abdul-Wahid\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/building-robots-nix-and-bazel\n\nLearn about the benefits of using Nix and Bazel, and the role of overlays in build systems.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6xWr8f2RhX0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6xWr8f2RhX0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6xWr8f2RhX0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/6xWr8f2RhX0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/6xWr8f2RhX0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 8,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "6xWr8f2RhX0"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "hHurNb2nUHcnhki0IZ_FnwiWilc",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi5DQUNERDQ2NkIzRUQxNTY1",
+      "snippet": {
+        "publishedAt": "2024-04-15T22:50:13Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "Nix State of the Union 2024",
+        "description": "Talk by Ron Efroni\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/nix-state-union-2024\n\nCover the dynamic landscape of Nix's growth, innovation, and future possibilities. This session will provide a comprehensive overview of the major milestones Nix has achieved over 2023 from key leads in the community and the foundation board members, the challenges we've faced, and the exciting developments on the horizon.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tMoJMMLEZPs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tMoJMMLEZPs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tMoJMMLEZPs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/tMoJMMLEZPs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/tMoJMMLEZPs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 9,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "tMoJMMLEZPs"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "oeJx1yOAwE_05grps0Ielgg0_nQ",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi4wOTA3OTZBNzVEMTUzOTMy",
+      "snippet": {
+        "publishedAt": "2024-04-15T22:50:13Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "The case for Nix on the home server",
+        "description": "Talk by Samir Rashid, Anthony Tarbinian\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/case-nix-home-server\n\nWhy is Nix a good choice for a home server? Learn how Nix enables maintenance free, secure, and reproducible home servers. The talk will cover why Nix is a powerful choice compared to other technologies like Docker or Ansible. It will also showcase how Nix makes it easy to get up and running with server applications such as Nginx, Wireguard, Jellyfin, Samba, and more.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/h8oyoDMUM2I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/h8oyoDMUM2I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/h8oyoDMUM2I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/h8oyoDMUM2I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/h8oyoDMUM2I/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 10,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "h8oyoDMUM2I"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "qJTeiWOCRznTBmnq1aZpBPiki18",
+      "id": "UExoMVFqR25mQzJlVExpYWRRQm81b19sNWFPY1lkQzZhVi4yODlGNEE0NkRGMEEzMEQy",
+      "snippet": {
+        "publishedAt": "2024-04-15T22:50:13Z",
+        "channelId": "UCN2nbMPLJWv3Y__4JuF_hMQ",
+        "title": "[High|Low]Lights of Adopting Nix at Looker (Google Cloud)",
+        "description": "Talk by Farid Zakaria, Micah Catlin\n\nhttps://www.socallinuxexpo.org/scale/21x/presentations/highlowlights-adopting-nix-looker-google-cloud\n\nA look at our adoption of Nix at Looker, now Google Cloud. I will go over the setup, adoption, broader community, and challenges.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GkgsFbwYdYA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GkgsFbwYdYA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GkgsFbwYdYA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/GkgsFbwYdYA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/GkgsFbwYdYA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Southern California Linux Expo",
+        "playlistId": "PLh1QjGnfC2eTLiadQBo5o_l5aOcYdC6aV",
+        "position": 11,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "GkgsFbwYdYA"
+        },
+        "videoOwnerChannelTitle": "Southern California Linux Expo",
+        "videoOwnerChannelId": "UCN2nbMPLJWv3Y__4JuF_hMQ"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 12,
+    "resultsPerPage": 50
+  }
+}
